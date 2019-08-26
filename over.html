@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #wrapper{
+            width: 600px;
+            height: 750px;
+            border: 1px solid black;
+            background-image: url("2.jpg");
+            background-size: cover;
+            position: relative;
+        }
+        #wrapper div{
+            width: 200px;
+            height: 70px;
+           position: absolute;
+        }
+
+        #wrapper div span {
+            position: absolute;
+           left: 200px;
+            top: 550px;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: orange;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: '宋体';
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div onclick="back()">
+        <span id="text1">WIN</span>
+        <span id="text2"><i>返回</i></span>
+    </div>
+</div>
+<script>
+    function back() {
+        location.href ="start.html";
+    }
+</script>
+</body>
+</html>
